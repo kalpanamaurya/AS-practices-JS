@@ -9,4 +9,22 @@ class password{
 
    }
 }
- let p = new password()
+ let p = new Password()
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
