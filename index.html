@@ -26,13 +26,13 @@
         const symbol = "@#$%^&*()-[{}]<>/*=";
 
         function createPassword(){
-            
+            let password = "";
+            password += upperCase[math.floor(math.random() * upperCase.lenght)];
+            password += lowerCase[math.floor(math.random() * lowerCase.lenght)];
+            password += number[math.floor(math.random() * number.lenght)];
+            password += symbol[math.floor(math.random() * symbol.lenght)];     
         }
-
-
-
-
-
+         
     </script> 
 </body>
 </html>
