@@ -14,23 +14,30 @@
         <div class="display">
             <input type="text" id="Password" placeholder="Password">
         </div>
-        <button>Generate Password</button>
+        <button onclick="createPassword()">Generate Password</button>
     </div>
     <script>
         const passwordBox = document.getElementById("Password");
-        const lenght = 8;
+        const lenght = 12;
 
         const upperCase = "ABCDEFGHIJKLMNOQRSTUVWXYZ";
         const lowerCase = "abcdefghijkmnopqrstuvwxyz";
         const number = "0123456789";
         const symbol = "@#$%^&*()-[{}]<>/*=";
+         const allChars = upperCase + lowerCase + number + symbol;
 
         function createPassword(){
             let password = "";
             password += upperCase[math.floor(math.random() * upperCase.lenght)];
             password += lowerCase[math.floor(math.random() * lowerCase.lenght)];
             password += number[math.floor(math.random() * number.lenght)];
-            password += symbol[math.floor(math.random() * symbol.lenght)];     
+            password += symbol[math.floor(math.random() * symbol.lenght)];  
+            
+            while(lenght > password.length){
+                password += allChars[math.floor(math.random() * allChars.lenght)];
+
+            }
+            passwordBox.value = password;
         }
          
     </script> 
