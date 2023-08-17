@@ -29,10 +29,10 @@
 
         function createPassword(){
             let password = "";
-            password += upperCase[math.floor(math.random() * upperCase.lenght)];
-            password += lowerCase[math.floor(math.random() * lowerCase.lenght)];
-            password += number[math.floor(math.random() * number.lenght)];
-            password += symbol[math.floor(math.random() * symbol.lenght)];  
+            password += upperCase[Math.floor(Math.random() * upperCase.lenght)];
+            password += lowerCase[Math.floor(Math.random() * lowerCase.lenght)];
+            password += number[Math.floor(Math.random() * number.lenght)];
+            password += symbol[Math.floor(Math.random() * symbol.lenght)];  
             
             while(lenght > password.length){
                 password += allChars[Math.floor(Math.random() * allChars.lenght)];
